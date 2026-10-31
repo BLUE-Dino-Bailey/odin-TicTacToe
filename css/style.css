@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Press Start";
+    src: url('../font/Press_Start_2P/PressStart2P-Regular.ttf');
+}
+
+body{
+    font-family: "Press Start";
+    color: white;
+    background-image: url('../images/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.heading{
+    color: white;
+
+    font-size: 48px;
+    text-decoration: underline;
+    padding-top: 12px;
+}
+
+nav > div{
+    text-align: center;
+
+    margin: 20px;
+}
+
+button{
+    color: white;
+
+    font-size: 22px;
+    font-family: "Press Start";
+    padding: 6px;
+    margin: 6px;
+    border: none;
+    background: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+button:active{
+    scale: 120%;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    column-rule: 6px solid white;
+    row-rule: 6px solid white;
+}
+
+
+
+.box{
+    font-size: 50px;
+    align-content: center;
+    text-align: center;
+}
